@@ -1,11 +1,153 @@
-/* Inserta tu codigo aqui */
+*{
+    outline: 1px yellow solid;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #3f3a43;
+    }
+
+.container{
+    margin: 0 auto; 
+     width:  1000px;
+    }
+
+.clearfix
+{
+	display: table;
+}
+
+.clearfix:after{
+	content:" ";
+	clear:both;        
+    }
+
+header{
+    background: #222024;
+    }
+.logo{
+    width: 30%;
+    }
+.navbar{
+     float: right;
+}
+.navbar li {
+    display: inline;
+    margin: 1%;
+   
+}
+.navbar a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+/* fin header*/
+
+.portada{
+    background: url(../image/header-image.jpg);
+    background-size: cover;
+    padding: 10%;
+    font-style: italic;
+    }
+
+.titulo{
+    background: #222024 ;
+    text-align: center;
+    padding: 1% 0%;
+    margin: 5%;
+}
+.titulo h1{
+    color: #e2953c;
+    font-size: 60px;
+}
+.titulo p{
+    color: white;
+    }
+
+/* fin hero */
+.flores{
+    margin: 0 auto;
+}
+.lista-flores{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    }
+.flor1, .flor2, .flor3{
+   background: #222024;
+    width: 31.3%;
+    margin: 2% 1%;
+    float: left;
+    
+     }
+.flores img{
+    width: 100%;
+}
+
+/* fin flores */
+
+.articulos{
+    width: 58%;
+    
+} 
+.sidebar{
+     width: 38%;
+}
+
+.articulos, .sidebar{
+    display: inline-block;
+    float: left;
+    margin: 1%;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    background: #222024;
+   }
+.articulos .video{
+    width: 100%;
+}
+
+.sidebar h3, .articulos h3{
+    color: #e58c25;
+}
+.sidebar input{
+    margin: 5% 0;
+    width: 90%;
+    background:#555158; 
+    border-style:  none;
+    padding: 2%;
+    }
+
+
+/* fin sidebar */
+
+footer{
+      text-align: center;
+      color: white;
+      background: #222024;
+      padding: 1%;
+}
+
 
 /* Responsive */
 
 @media screen and (max-width : 920px) {
+    .container{
+        width: 700px;
+    }
 
 }
 
 @media screen and (max-width: 600px) {
+
+    .container{
+        width: 450px;
+        }
+    .sidebar{
+        visibility: hidden;
+    }
 
 }
