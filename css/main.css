@@ -1,10 +1,7 @@
-*{
-    outline: 1px yellow solid;
-}
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "courgette";
     background: #3f3a43;
     }
 
@@ -13,31 +10,38 @@ body{
      width:  1000px;
     }
 
-.clearfix
-{
-	display: table;
-}
+.clearfix:before, .clearfix:after{
+	content:" ";
+    display: table;
+    }
 
 .clearfix:after{
-	content:" ";
-	clear:both;        
-    }
+	clear:both; 
+}
+.clearfix:before{
+	*zoom:1;
+}
+class*=icon-
+/* -------- fin de generales -----*/
 
 header{
     background: #222024;
-    }
+      }
 .logo{
-    width: 30%;
+    width: 25%;
+    float: left;
     }
-.navbar{
-     float: right;
-}
-.navbar li {
+.nav{
+      width: 60%;
+    float: right;
+    
+    }
+.nav li {
     display: inline;
-    margin: 1%;
-   
-}
-.navbar a{
+    margin: 0 1%;
+    float: right;
+    }
+.nav a{
     list-style: none;
     text-decoration: none;
     color: white;
@@ -59,7 +63,7 @@ header{
 }
 .titulo h1{
     color: #e2953c;
-    font-size: 60px;
+    font-size: 400%;
 }
 .titulo p{
     color: white;
@@ -121,6 +125,15 @@ header{
     padding: 2%;
     }
 
+.iconos{
+    display: inline;
+      }
+.iconos img{
+    width: 10%;
+    border-radius: 100%;
+    color: white;
+}
+
 
 /* fin sidebar */
 
@@ -130,6 +143,7 @@ footer{
       background: #222024;
       padding: 1%;
 }
+
 
 
 /* Responsive */
@@ -144,10 +158,17 @@ footer{
 @media screen and (max-width: 600px) {
 
     .container{
-        width: 450px;
+        width: 90%;
+        margin: 2%;
         }
-    .sidebar{
+    .articulos, .flor1, .flor2, .flor3{
+        width: 100%;
+        }
+    .sidebar, .nav{
         visibility: hidden;
+        width: 0;
+       display: none;
     }
+        
 
 }
