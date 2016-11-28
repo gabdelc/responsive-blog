@@ -46,6 +46,10 @@ header{
     text-decoration: none;
     color: white;
 }
+.menu{
+    visibility: hidden;
+    width: 0;
+}
 /* fin header*/
 
 .portada{
@@ -146,6 +150,10 @@ footer{
       background: #222024;
       padding: 1%;
 }
+footer a{
+     text-decoration: none;
+      color: white;
+      }
 
 
 
